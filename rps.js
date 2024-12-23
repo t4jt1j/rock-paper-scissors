@@ -55,10 +55,11 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+for (let i = 0; i < 5; i++) {
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
+    console.log(playRound(humanSelection, computerSelection));
+    console.log("Human score: " + humanScore);
+    console.log("Computer score: " + computerScore);
+}
 
-
-console.log(playRound(humanSelection, computerSelection));
-console.log("Human score: " + humanScore);
-console.log("Computer score: " + computerScore);
