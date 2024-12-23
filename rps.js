@@ -9,4 +9,4 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice());
+console.log("Computer chose " + getComputerChoice());
