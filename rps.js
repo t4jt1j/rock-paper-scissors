@@ -14,3 +14,7 @@ console.log("Computer chose " + getComputerChoice());
 let getHumanChoice = prompt("Choose rock, paper, or scissors: ");
 
 console.log("You chose " + getHumanChoice);
+
+let humanScore = 0;
+
+let computerScore = 0;
