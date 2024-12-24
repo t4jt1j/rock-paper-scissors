@@ -11,7 +11,7 @@ function playGame() {
     }
     
     function getHumanChoice() {
-        let choice = prompt("Choose rock, paper, or scissors: ");
+        let choice = prompt("Play 5 rounds! Choose rock, paper, or scissors: ");
         return choice.toLowerCase();
     }
     
@@ -56,16 +56,24 @@ function playGame() {
         let humanSelection = getHumanChoice();
         let computerSelection = getComputerChoice();
         console.log(playRound(humanSelection, computerSelection));
+        console.log("=====================================");
         console.log("Human score: " + humanScore);
         console.log("Computer score: " + computerScore);
+        console.log("=====================================");
     }
 
     if (humanScore > computerScore) {
+        console.log("*********************");
         console.log("You win the game!");
+        console.log("*********************");
     } else if (humanScore < computerScore) {
+        console.log("****************************");
         console.log("Computer wins the game!");
+        console.log("****************************");
     } else {
+        console.log("*********************");
         console.log("It's a tie game!");
+        console.log("*********************");
     }
 }
 
